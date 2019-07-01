@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/user/regist" method="post">
+        用户名：<input type="text" name="username" /><br/>
+        密码:<input type="password" name="password"/><br/>
+        邮箱：<input type="=text" name="email" /><br/>
+        验证码：<input type="text" name="suiji"/><button type="button" id="send">发送验证码</button><br/>
+        <button type="submit">注册</button>
+    </form>
+
+    <script type="text/javascript">
+        $("send").click(function () {
+            var name = $(name).val;
+            var email = $(email).val;
+            $.ajax({
+                url:"/user/send",
+                type:"post",
+                data:"name="+name+"&email"+email,
+                success: function () {
+                    
+                }
+            })
+        })
+    </script>
+</body>
+</html>

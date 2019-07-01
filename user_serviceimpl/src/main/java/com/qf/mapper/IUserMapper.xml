@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.mapper.IUserMapper">
+  <resultMap id="ResultMap" type="com.qf.entity.User">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, username, password,email
+  </sql>
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_user
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+
+  <insert id="insertUser" useGeneratedKeys="true" keyProperty="id">
+    insert into user(username, password,email) values (#{username},#{password},#{email})
+  </insert>
+
+  <select id="findOne" resultMap="ResultMap">
+    select * from user
+    <where>
+      <if test="username!=null">
+        username=#{username}
+      </if>
+    </where>
+  </select>
+</mapper>

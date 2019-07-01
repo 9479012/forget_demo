@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="email_serviceimpl" />
+        <module name="forget_api" />
+        <module name="forget_entity" />
+        <module name="user_serviceimpl" />
+        <module name="user_web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="email_serviceimpl" target="1.8" />
+      <module name="forget_api" target="1.8" />
+      <module name="forget_demo" target="1.8" />
+      <module name="forget_entity" target="1.8" />
+      <module name="user_serviceimpl" target="1.8" />
+      <module name="user_web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/email_serviceimpl/email_serviceimpl.iml" filepath="$PROJECT_DIR$/email_serviceimpl/email_serviceimpl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forget_api/forget_api.iml" filepath="$PROJECT_DIR$/forget_api/forget_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forget_demo.iml" filepath="$PROJECT_DIR$/forget_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forget_entity/forget_entity.iml" filepath="$PROJECT_DIR$/forget_entity/forget_entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user_serviceimpl/user_serviceimpl.iml" filepath="$PROJECT_DIR$/user_serviceimpl/user_serviceimpl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user_web/user_web.iml" filepath="$PROJECT_DIR$/user_web/user_web.iml" />
+    </modules>
+  </component>
+</project>

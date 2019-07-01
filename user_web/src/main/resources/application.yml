@@ -1,0 +1,15 @@
+
+server:
+  port: 8080
+spring:
+  thymeleaf:
+    cache: false
+dubbo:
+  application:
+    name: user_web
+  registry:
+    address: zookeeper://120.25.244.38:2181
+  consumer:
+    check: false
+    timeout: 10000
+    retries: 3

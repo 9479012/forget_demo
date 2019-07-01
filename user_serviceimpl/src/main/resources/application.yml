@@ -1,0 +1,8 @@
+
+dubbo:
+  application:
+    name: user_service
+  registry:
+    address: zookeeper://120.25.244.38:2181
+  protocol:
+    port: -1

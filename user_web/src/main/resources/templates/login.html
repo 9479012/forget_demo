@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/user/login" method="post">
+        用户名:<input type="text" name="username"/><br/>
+        密码:<input type="text" name="password"/><br/>
+        <button type="submit">登陆</button>  <button type="button" id="found">忘记密码</button>
+    </form>
+    <script>
+        $("found").click(function () {
+            var name = $(name).val;
+            $.ajax({
+                url:"/user/found",
+                type:"post",
+                data:"name="+name,
+            })
+        })
+
+    </script>
+
+
+</body>
+</html>
